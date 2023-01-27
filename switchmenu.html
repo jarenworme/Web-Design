@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Form</title>
+    <link rel="stylesheet" href="switchmenu.css" />
+  </head>
+  <body>
+  <div class="form">
+    <h1 id="title">Switch Game Ranker</h1>
+    <p id="description">show us how you use your Nintendo Switch</p>
+    <hr class="standard-hr">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name <input id="name" name="name" type="text" placeholder="FirstName LastName" required></input></label>
+        <label id="email-label" for="email">Enter Your Email <input id="email" name="email" type="email" placeholder="example@mail.com" required></input></label>
+      </fieldset>
+      <hr class="no-marg-hr">
+      <fieldset>
+        <label id="number-label" for="number">How many years have you owned your switch? <input id="number" name="number" type="number" min="0" max="6" placeholder="e.g. 2" required></input></label>
+        <label>Which switch model do you own?</label>
+        <label for="OLED"><input value="ol" id="OLED" type="radio" name="stype"</input>OLED</label>
+        <label for="Switch-Lite"><input value="sl" id="Switch-Lite" type="radio" name="stype"</input>Switch Lite</label>
+        <label for="Standard"><input value="st" id="Standard" type="radio" name="stype"</input>Standard</label>
+
+      
+        <label> Which joycon color combination do you prefer?
+          <select id="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">red and blue</option>
+            <option value="2">grey</option>
+            <option value="3">green and purple</option>
+            <option value="4">skyward sword</option>
+            <option value="5">animal crossing</option>
+          </select>
+        </label>
+        <label> What is your preferred controller?
+          <select id="dropdown-two" required>
+            <option value="">(select one)</option>
+            <option value="1">joycons</option>
+            <option value="2">gamecube controller (wireless)</option>
+            <option value="3">gamecube controller (wired)</option>
+            <option value="4">switch pro controller</option>
+            <option value="5">other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <hr class="no-marg-hr">
+      <fieldset>
+        <label class="title-label">Which of these games have you played?</label>
+        <label><input value="mk" id="mk" name="mk" type="checkbox"></input>Mariokart 8 Deluxe</label>
+        <label><input value="zb" id="zb" name="zb" type="checkbox"></input>The Legend of Zelda: Breath of the Wild</label>
+        <label><input value="md" id="md" name="md" type="checkbox"></input>Metroid Dread</label>
+        <label><input value="ac" id="ac" name="ac" type="checkbox"></input>Animal Crossing New Horizons</label>
+        <label><input value="sb" id="sb" name="sb" type="checkbox"></input>Super Smash Bros. Ultimate</label>
+      <label class="title-label">Which of these games is your favorite and how many hours have you put into it?<textarea rows="8" cols="40" placeholder="Breath of the Wild is the most beautifully designed game of all time and I've put 250+ hours into many playthroughs"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+
+    </form>
+  </div>  
+  </body>
+</html>
